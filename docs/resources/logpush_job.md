@@ -43,10 +43,10 @@ resource "cloudflare_api_token" "logpush_r2_token" {
   }
 }
 
-resource "cloudflare_logpush_job" "http_requests" {
+resource "cloudflare_logpush_job" "example_job" {
   enabled          = true
-  zone_id          = var.zone_id
-  name             = "http_requests"
+  zone_id          = "0da42c8d2132a9ddaf714f9e7c920711"
+  name             = "My-logpush-job"
   logpull_options  = "fields=ClientIP,ClientRequestHost,ClientRequestMethod,ClientRequestURI,EdgeEndTimestamp,EdgeResponseBytes,EdgeResponseStatus,EdgeStartTimestamp,RayID&timestamps=rfc3339"
   destination_conf = "r2://cloudflare-logs/http_requests/date={DATE}?account-id=${var.account_id}&access-key-id=${cloudflare_api_token.logpush_r2_token.id}&secret-access-key=${sha256(cloudflare_api_token.logpush_r2_token.value)}"
   dataset          = "http_requests"
