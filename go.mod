@@ -10,7 +10,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.34
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.63.0
 	github.com/cloudflare/cloudflare-go v0.115.0
-	github.com/cloudflare/cloudflare-go/v6 v6.1.1-0.20251009165137-44ef339e764f
+	github.com/cloudflare/cloudflare-go/v6 v6.1.1-0.20251010165610-a10a810b672c
 	github.com/davecgh/go-spew v1.1.1
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/hashicorp/terraform-plugin-docs v0.21.0
@@ -98,7 +98,7 @@ require (
 	github.com/rivo/uniseg v0.2.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/tidwall/match v1.1.1 // indirect
+	github.com/tidwall/match v1.2.0 // indirect
 	github.com/tidwall/pretty v1.2.1 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
 	github.com/vmihailenco/msgpack/v5 v5.4.1 // indirect
